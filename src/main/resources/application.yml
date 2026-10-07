@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: sgd-api
+
+  datasource:
+    url: jdbc:postgresql://38.250.187.139:5434/IDOSGD?currentSchema=idosgd
+    username: postgres
+    password: 123456789
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: never
+app:
+  cifrado:
+    key: SgDPasswordSecretPasswor
+  jwt:
+    secret: RDeYfs8Kj2uFgARs0+/pTJjnO+Qxy+Bqvu4CAAaHiLo=
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG
+
+server:
+  port: 4040
